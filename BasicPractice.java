@@ -1,16 +1,20 @@
+import java.util.Scanner;
+
 public class BasicPractice {
+
     // FUNCTION (method) that adds two numbers
     public static int addNumbers(int x, int y) {
         return x + y;
     }
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
         // PRINT STATEMENT
         System.out.println("Hello, Java");
 
         // VARIABLES + DATA TYPES
-        int age = 18;
+        int age = 18 ;
         double salary = 34500.75;
         char gender = 'M';
         boolean isStudent = true;
@@ -112,5 +116,18 @@ public class BasicPractice {
         // FUNCTION CALL
         int sum = addNumbers(10, 20);
         System.out.println("Sum from function: " + sum);
+
+        // Individual chracter Access from String 
+        System.out.print("Enter String :");
+        String str = scan.nextLine();
+
+        char[] ch = str.toCharArray();
+        
+        for(int i=0; i < ch.length ; i++){
+        System.out.println(ch[i]);
+        }
+
+
+
     }
 }
