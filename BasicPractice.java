@@ -127,7 +127,22 @@ public class BasicPractice {
         System.out.println(ch[i]);
         }
 
-
-
+        // Conversion of every Chracter of String into capital case
+        
+        System.out.println("Enter String:");
+        String text = scan.nextLine();
+        char[] letter = text.toCharArray();
+        
+        System.out.println("Converted to Capital: ");
+        for(int i=0 ; i<letter.length; i++){
+            
+            if(letter[i] >= 'a' && letter[i] <= 'z' ) {
+                char upperChar = (char)(letter[i] - 32);
+                System.out.print(upperChar);
+            }else {
+                
+                System.out.print(letter[i]);
+            }
     }
+}
 }
