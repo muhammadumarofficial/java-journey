@@ -164,6 +164,16 @@ public class BasicPractice {
             for(int i = 0; i < inputAsChar.length; i++) {
                 System.out.print(inputAsChar[i]);   
             }
+
+            // Printing String in Inverse Order
+            System.out.println();
+            System.out.print("Enter String :");
+            String str1 = scan.nextLine();
+            char[] ch1 = str1.toCharArray();
+
+            for(int i=ch1.length-1; i>=0; i--){
+                System.out.print(ch1[i]);
+            }
             
 
             
