@@ -142,46 +142,7 @@ public class BasicPractice {
             }else { 
                 System.out.print(letter[i]);
             }
-        }
-
-        // Conversion of first chracter of evry word into capital case
-            System.out.println();
-            System.out.println("Enter space-separated String :");
-            String userInput = scan.nextLine();
-            char[] inputAsChar = userInput.toCharArray();
-
-            if(inputAsChar[0] >= 'a' && inputAsChar[0]<='z'){
-                inputAsChar[0] = (char)(inputAsChar[0] - 32);
-            }
-
-            for(int i=1; i<inputAsChar.length ; i++){
-                if(inputAsChar[i-1 ] == ' ' &&  inputAsChar[i] >= 'a' && inputAsChar[i]<='z' ){
-                    inputAsChar[i] = (char)(inputAsChar[i] - 32);
-                }
-            }
-                
-            System.out.println("Capitalized String:");
-            for(int i = 0; i < inputAsChar.length; i++) {
-                System.out.print(inputAsChar[i]);   
-            }
-
-            // Printing String in Inverse Order
-            System.out.println();
-            System.out.print("Enter String :");
-            String str1 = scan.nextLine();
-            char[] ch1 = str1.toCharArray();
-
-            for(int i=ch1.length-1; i>=0; i--){
-                System.out.print(ch1[i]);
-            }
-            
-
-            
-
-           
-
-
-
+        }      
 
     }
 }
